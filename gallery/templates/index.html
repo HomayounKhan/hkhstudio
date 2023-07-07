@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HKH GALLERY</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5p3z97ztsE2RW2hj6c/ip6Ii8d7f9p6jJd6rc7I4" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#slideshow">My Gallery</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact & Booking</a></li>
+        </ul>
+    </nav>
+
+    <div class="slideshow-container" id="slideshow">
+
+        <div class="mySlides fade">
+            <img src="{% static 'hkh-slide-1.jpg' %}" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="{% static 'hkh-slide-2.jpg' %}" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="{% static 'hkh-slide-3.jpg' %}" style="width:100%">
+        </div>
+
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
+
+    <div id="about">
+        <h2>About Me</h2>
+        <br>
+        <p>
+            My name is Homayoun Khanmohammadi, based in Stockholm. I want to
+            describe some reasons I am interested in photography. As a
+            photographer, I am deeply passionate about capturing moments,
+            emotions, and stories through the lens of my camera. With a keen eye
+            for detail, composition, and lighting, I strive to create visually
+            stunning and impactful images that evoke emotions and tell unique
+            stories. Whether it's capturing the beauty of a landscape, the raw
+            emotions of a portrait, the energy of street life, or the delicate
+            details of nature, I am constantly seeking new ways to express my
+            creativity and push the boundaries of my craft. My photographic
+            style is a reflection of my artistic vision and personal
+            perspective, and I am always on the lookout for interesting
+            subjects, captivating scenes, and unique angles to capture in my
+            images. With a dedication to continuous learning and growth, I am
+            committed to honing my skills, exploring different genres, and
+            making a meaningful impact through my art. Photography is not just a
+            profession for me, but a way of life, and I am thrilled to share my
+            passion with others through my work.
+        </p>
+    </div>
+    <div id="contact">
+        <h2>Contact Me</h2>
+        <p>HKH STUDIO</p>
+        <p>Email: myemail@example.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <p>Location: Stockholm, Sweden</p>
+    
+    </div>
+    <div class="booking">
+        <h2>Book your session <br> We will contact you as soon as possible</h2>
+        <form>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <label for="family-name">Family Name:</label>
+            <input type="text" id="family-name" name="family-name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener"aria-label="visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook-f" style="color: #000000;"></i></a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram" style="color: #000000;"></i></a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter" style="color: #000000;"></i></a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="visit our Youtube page (opens in a new tab)"><i class="fab fa-youtube" style="color: #000000;"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
+    <script src="{% static 'script.js' %}"></script>
+
+</body>
+</html>

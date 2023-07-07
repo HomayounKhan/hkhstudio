@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+.slideshow-container {
+    width: 65%;
+    height: 45%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+/* Slideshow text */
+.text {
+    color: #0c0404;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Navigation bar */
+nav {
+    background-color: #dd8e34;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #641987;
+}
+
+.active {
+    background-color: #00c607;
+}
+
+/* About Me section */
+#about {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Contact Me section */
+#contact {
+    padding: 50px;
+    text-align: center;
+}
+
+.booking {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #848383;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.booking h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #070707;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+.booking form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.booking label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+.booking input {
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.booking button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #333;
+    color: rgb(124, 122, 122);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+.booking button:hover {
+    background-color: #444;
+}
+
+.section h1 {
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+.section p {
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+label,
+input {
+    margin: 5px;
+}
+
+button[type="submit"] {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #000000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer {
+    height: 150px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks>li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #ffffff;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+
+    padding: 20px;
+    font-family: Courier;
+    font-size: 2.9rem;
+}
+
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+    .slideshow-container {
+        width: 80%;
+        height: 50%;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    nav li a {
+        padding: 12px 14px;
+    }
+
+    .booking {
+        max-width: 90%;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .slideshow-container {
+        width: 100%;
+        height: 60%;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    nav li {
+        float: none;
+        width: 100%;
+    }
+
+    nav li a {
+        padding: 10px 12px;
+        text-align: left;
+    }
+
+    .booking {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
